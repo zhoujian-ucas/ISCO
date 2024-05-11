@@ -7,3 +7,4 @@
 
 ## 使用方法
 通过以下命令行来运行项目：
+python main.py -i .\input\ -o .\output\
