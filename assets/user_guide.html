@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ISCO User Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .model-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .model-table th, .model-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .model-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .model-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .tip {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .citation {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="qrcode.png" alt="ISCO QR Code">
+        <h1>ISCO User Guide</h1>
+        <p>Intelligent Framework for Accurate Segmentation and Comparative Analysis of Organoids</p>
+        <p><em>Version 1.0.0</em></p>
+    </div>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>ISCO is an advanced framework designed for the automated analysis of organoid microscopy images. It combines state-of-the-art image segmentation with comprehensive analysis tools, providing researchers with an efficient solution for organoid characterization.</p>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>🔍 Automated Analysis</h3>
+                <p>Advanced AI-powered segmentation for accurate organoid detection</p>
+            </div>
+            <div class="feature-item">
+                <h3>📊 Comprehensive Metrics</h3>
+                <p>Detailed morphological measurements and statistical analysis</p>
+            </div>
+            <div class="feature-item">
+                <h3>🌐 Multi-language Support</h3>
+                <p>Available in English and Chinese interfaces</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Getting Started</h2>
+        <h3>System Requirements</h3>
+        <ul>
+            <li>Operating System: Windows 10 or later</li>
+            <li>RAM: 8GB minimum (16GB recommended)</li>
+            <li>GPU: NVIDIA GPU with CUDA support (recommended)</li>
+            <li>Storage: 2GB free space for installation</li>
+        </ul>
+        
+        <h3>Installation</h3>
+        <ol>
+            <li>Download the ISCO installer from the official website</li>
+            <li>Run the installer and follow the setup wizard</li>
+            <li>Launch ISCO from the desktop shortcut or start menu</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Model Selection Guide</h2>
+        <p>ISCO provides four different model sizes to accommodate various needs and hardware capabilities:</p>
+        
+        <table class="model-table">
+            <tr>
+                <th>Model Size</th>
+                <th>Memory Usage</th>
+                <th>Processing Speed</th>
+                <th>Accuracy</th>
+                <th>Recommended Use Case</th>
+            </tr>
+            <tr>
+                <td>Tiny</td>
+                <td>~2GB VRAM</td>
+                <td>Fastest</td>
+                <td>Good</td>
+                <td>Quick analysis, limited hardware resources</td>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>~4GB VRAM</td>
+                <td>Fast</td>
+                <td>Better</td>
+                <td>Balance between speed and accuracy</td>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td>~8GB VRAM</td>
+                <td>Moderate</td>
+                <td>Excellent</td>
+                <td>High-quality analysis, standard hardware</td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td>~12GB VRAM</td>
+                <td>Slowest</td>
+                <td>Best</td>
+                <td>Maximum accuracy, high-end hardware</td>
+            </tr>
+        </table>
+
+        <div class="note">
+            <strong>Note:</strong> Memory usage is approximate and may vary based on image size and system configuration.
+        </div>
+
+        <div class="tip">
+            <strong>Recommendation:</strong> Start with the Base model for most use cases. If you need faster processing, 
+            switch to Small or Tiny. For maximum accuracy and if you have sufficient hardware resources, use the Large model.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Workflow Guide</h2>
+        <h3>1. Data Preparation</h3>
+        <ul>
+            <li>Prepare your microscopy images in PNG format</li>
+            <li>Optional: Create a mapping file (CSV) for group analysis</li>
+            <li>Ensure sufficient disk space for results</li>
+        </ul>
+
+        <h3>2. Analysis Setup</h3>
+        <ol>
+            <li>Select your preferred model size based on your hardware capabilities</li>
+            <li>Choose the input directory containing your images</li>
+            <li>Specify an output directory for results</li>
+            <li>Optional: Load a mapping file for group analysis</li>
+        </ol>
+
+        <h3>3. Processing and Results</h3>
+        <ul>
+            <li>Monitor progress through the progress bar</li>
+            <li>Review generated masks and measurements</li>
+            <li>Use the merge function to combine results</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Analysis Metrics</h2>
+        <p>ISCO provides comprehensive morphological analysis including:</p>
+        <ul>
+            <li><strong>Area:</strong> Total surface area of the organoid</li>
+            <li><strong>Perimeter:</strong> Boundary length measurement</li>
+            <li><strong>Radius:</strong> Average distance from center to boundary</li>
+            <li><strong>Non-smoothness:</strong> Boundary roughness indicator</li>
+            <li><strong>Non-circularity:</strong> Deviation from perfect circular shape</li>
+            <li><strong>Symmetry:</strong> Measure of shape regularity</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Troubleshooting</h2>
+        <div class="note">
+            <h3>Common Issues:</h3>
+            <ul>
+                <li><strong>Model Loading Error:</strong> Verify model files are in the correct directory</li>
+                <li><strong>Processing Speed:</strong> Consider using a smaller model size or enabling GPU acceleration</li>
+                <li><strong>Memory Issues:</strong> Close other applications or switch to a smaller model size</li>
+                <li><strong>Image Loading Error:</strong> Ensure images are in PNG format and not corrupted</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Citation</h2>
+        <p>If you use ISCO in your research, please cite:</p>
+        <div class="citation">
+            Zhou J, Fu Z, Ni X, et al. ISCO: Intelligent Framework for Accurate Segmentation and Comparative Analysis of Organoids[J]. bioRxiv, 2024: 2024.12.24.630244.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Support</h2>
+        <p>For technical support or to report issues:</p>
+        <ul>
+            <li>Visit our GitHub repository</li>
+            <li>Contact our development team</li>
+            <li>Scan the QR code above to follow our updates</li>
+        </ul>
+    </div>
+</body>
+</html> 
