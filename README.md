@@ -198,9 +198,3 @@ We thank the following projects for their contributions to ISCO:
 - [Hiera](https://github.com/facebookresearch/Hiera)
 - [SAM2](https://github.com/facebookresearch/sam2)
 - [SAM](https://github.com/facebookresearch/sam)
-
- <div class="header">
-        <img src="assets/qun.jpg" alt="ISCO QR Code">
-        <h1>算法反馈请加群</h1>
-        <p>Intelligent Framework for Accurate Segmentation and Comparative Analysis of Organoids</p>
-    </div>
